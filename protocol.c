@@ -84,7 +84,7 @@ enet_protocol_dispatch_incoming_commands (ENetHost * host, ENetEvent * event)
            event -> peer = peer;
            event -> data = peer -> eventData;
 
-           enet_peer_reset (peer);
+           // enet_peer_reset (peer);
 
            return 1;
 
@@ -148,7 +148,7 @@ enet_protocol_notify_disconnect (ENetHost * host, ENetPeer * peer, ENetEvent * e
         event -> peer = peer;
         event -> data = 0;
 
-        enet_peer_reset (peer);
+        // enet_peer_reset (peer);
     }
     else 
     {
